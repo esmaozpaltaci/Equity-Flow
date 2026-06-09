@@ -20,14 +20,9 @@ const Sidebar = () => {
     <aside className="w-64 min-h-screen flex flex-col border-r border-[var(--border)]"
       style={{ background: "var(--bg-card)" }}>
       {/* Logo */}
-      <div className="h-16 flex items-center gap-3 px-5 border-b border-[var(--border)]">
-        <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center shadow-lg">
-          <Hexagon size={18} className="text-white" />
-        </div>
-        <div>
-          <p className="text-sm font-bold text-[var(--text-primary)] leading-tight">EquityFlow</p>
-          <p className="text-[10px] text-[var(--text-dim)]">dApp v1.0</p>
-        </div>
+      {/* Logo */}
+      <div className="h-16 flex items-center px-5 border-b border-[var(--border)]">
+        <img src="/logo.png" alt="EquityFlow Logo" className="h-10 object-contain drop-shadow-md" />
       </div>
 
       {/* Navigation */}
