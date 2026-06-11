@@ -23,13 +23,12 @@ Proje, modern Web3 teknolojileri ve akıllı kontrat standartları kullanılarak
 
 ## 📜 Akıllı Kontratlar
 
-EquityFlow sistemi, birbirine entegre çalışan 5 temel akıllı kontrattan oluşur:
+EquityFlow sistemi, birbirine entegre çalışan 4 temel akıllı kontrattan oluşur:
 
 1. **ContributorNFT.sol:** Ekip üyelerine atanmış kimlik tokenidir. Üyenin rolünü, sisteme katkı sağladığı toplam saati ve geçmiş emeklerini kayıt altında tutar. Hakların devredilebilmesi için transfer edilebilir yapıdadır ve yetkilendirme (izin) mekanizmasının temelini oluşturur.
 2. **EquityToken.sol (EQT):** Projenin öz sermayesini temsil eden ERC20 tokenidir. İşler onaylandıkça otomatik olarak basılır (mint) ve sahiplerine oy/temettü gücü verir.
-3. **MainEngine.sol:** Sistemin kalbidir. İş girişlerini, %51 onay eşiği mantığını ve iş onaylandığında EQT tokenin basılması sürecini yönetir.
-4. **DividendDistributor.sol:** Gelir paylaşımını yönetir. Projenin kasasına gelen ETH'leri, o anki EQT token sahiplerine ellerindeki hisse oranında böler ve çekilebilir (claim) hale getirir.
-5. **GovernanceVoting.sol:** Proje içi kararların alındığı modüldür. 30 günlük süre içinde sunulan önergelerin %51 oranla kabulünü veya reddini blockchain üzerine değişmez bir şekilde kaydeder.
+3. **MainEngine.sol:** Sistemin kalbidir. İş girişlerini, %51 onay eşiği mantığını, iş onaylandığında EQT tokenin basılması sürecini ve gelirlerin (temettü) dağıtılmasını yönetir.
+4. **GovernanceVoting.sol:** Proje içi kararların alındığı modüldür. 30 günlük süre içinde sunulan önergelerin %51 oranla kabulünü veya reddini blockchain üzerine değişmez bir şekilde kaydeder.
 
 ## 💻 Kurulum ve Çalıştırma
 
